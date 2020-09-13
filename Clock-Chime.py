@@ -1,6 +1,6 @@
 # This program is a chiming clock replicating the exact Big Ben chimes.
 # Can be set to ring every 15, 30 or 60 minutes
-# This code is provided under the BSD license
+# This code is provided under the gitignore license
 
 import os
 import datetime
