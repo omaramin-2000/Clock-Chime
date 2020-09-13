@@ -6,6 +6,7 @@ Description:
 
 Requirements:
   Python3 or above
+  Pip package
   Playsound package...can be installed in cmd command "pip install playsound" in windows,or in linux; terminal:"pip3 install playsound"
 
 License:
