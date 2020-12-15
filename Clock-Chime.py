@@ -1,6 +1,6 @@
 # This program is a chiming clock replicating the exact Big Ben chimes.
-# Can be set to ring every 15, 30, or 60 minutes
-# This code is provided under the MIT license
+# Can be set to ring every 15, 30, or 60 minutes.
+# This code is provided under the MIT license.
 
 import datetime
 import time
@@ -17,12 +17,12 @@ while True:
     Hr = datetime.datetime.now().hour
     Min = datetime.datetime.now().minute
     Sec = datetime.datetime.now().second
-    if Hr > 12: Hr = Hr - 12 # subtracts 12 from the 24 hours if after12 pm, or you will get 13,14,15 chimes, and so on
-    if Hr == 00: Hr = 12 # 12 am is 12 chimes
-    # only chimes if in the first 10 seconds of a minute, so this avoids a repeated chiming bug if the chime 
-    # ends before the minute of 00, 15, 30, 45 passes
+    if Hr > 12: Hr = Hr - 12 # Subtracts 12 from the 24 hours if after12 pm, or you will get 13, 14, 15 chimes, and so on.
+    if Hr == 0: Hr = 12 # 12 am is 12 chimes.
+    # Only chimes if in the first 10 seconds of a minute, so this avoids a repeated chiming bug if the chime 
+    # ends before the minute of 0, 15, 30, 45 passes.
     if 0 <= Sec < 5: 
-        if Min == 00:
+        if Min == 0:
             playsound('Hour Chime.mp3')
             for y in range(Hr):
                 playsound('Hour Strike.mp3')
