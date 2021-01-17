@@ -17,7 +17,7 @@ while True:
     Hr = datetime.datetime.now().hour
     Min = datetime.datetime.now().minute
     Sec = datetime.datetime.now().second
-    if Hr > 12: Hr = Hr - 12 # Subtracts 12 from the 24 hours if after12 pm, or you will get 13, 14, 15 chimes, and so on.
+    if Hr > 12: Hr -= 12 # Subtracts 12 from the 24 hours if after12 pm, or you will get 13, 14, 15 chimes, and so on.
     if Hr == 0: Hr = 12 # 12 am is 12 chimes.
     # Only chimes if in the first 10 seconds of a minute, so this avoids a repeated chiming bug if the chime 
     # ends before the minute of 0, 15, 30, 45 passes.
