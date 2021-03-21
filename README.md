@@ -1,6 +1,5 @@
-# Clock Chime
+# Clock Chime By Omar Amin
 # Description:
- - Clock-Chime By Omar Amin.
  - This program is a chiming clock replicating the exact Big Ben chimes.
  - Can be set to ring every 15, 30, or 60 minutes.
 
