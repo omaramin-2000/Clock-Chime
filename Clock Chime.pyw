@@ -67,8 +67,8 @@ def sel():
 i = IntVar()
 
 # Defining The Images 
-on = PhotoImage(file = "on.png") 
-off = PhotoImage(file = "off.png") 
+on = PhotoImage(file = "On.png") 
+off = PhotoImage(file = "Off.png") 
 
 # Creating The switch Button 
 on_button = Button(window, image = on, command = switch)
