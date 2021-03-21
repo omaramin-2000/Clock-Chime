@@ -24,7 +24,7 @@ def clock():
     lbl.config(text = string) 
     lbl.after(1000, clock)
 
-# Styling the label widget so that clock will look more attractive
+# Styling the label widget so that clock looks more attractive
 lbl = Label(window, font = ('calibri', 35, 'bold'), background = 'red', foreground = 'white') 
 lbl.pack(pady = 10, anchor = 'center') 
 clock()
