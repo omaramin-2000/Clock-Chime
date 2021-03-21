@@ -9,20 +9,20 @@ while True:
     f = open('minutes to chime.txt', 'r')
     x = int(f.read())
 
-    # Reading the text file that's responsible for the global track that's determined by the other (gui) program
-    # Either if the chimes are on or off
+    # Reading the text file that's responsible for the Chimes track that's determined by the other (gui) program
+    # Either if it's on or off
     g = open('global.txt', 'r')
     t = int(g.read())
 
-    # Reading the starting hour chime from the text file that's determined ny the (gui) program
+    # Reading the starting hour chime from the text file that's determined by the (gui) program
     s = open('a.txt', 'r')
     a = int(s.read())
 
-    # Reading the ending hour chime from the text file that's determined ny the (gui) program
+    # Reading the ending hour chime from the text file that's determined by the (gui) program
     e = open('b.txt', 'r')
     b = int(e.read())
 
-    # Only chimes if the global is on
+    # Only chimes if the track is on
     if int(t) == 1 :
         # Defining the time variables
         Hr = datetime.datetime.now().hour
@@ -30,7 +30,7 @@ while True:
         Sec = datetime.datetime.now().second
         
         n = ''
-        # Determining if the number of ending hour chime if it's above the starting chime to detect the range successfully
+        # Determining if the number of starting hour chime is above the ending hour chime to recognize the range successfully
         if b >= a:
             if Hr in range(a, b): n = 1
         elif Hr >= a or Hr <= b: n = 1
