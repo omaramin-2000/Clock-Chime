@@ -1,4 +1,4 @@
-# Clock-Chime
+# Clock Chime
 # Description:
  - Clock-Chime By Omar Amin.
  - This program is a chiming clock replicating the exact Big Ben chimes.
