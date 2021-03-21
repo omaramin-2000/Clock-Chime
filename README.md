@@ -20,7 +20,7 @@
 
 2. The "Clock Chime.pyw" file includes the Tkinter window, which's used to set the program so it saves to the data text files.
 
-3. The "Main.pyw" file reads the text files as saved from the other py file (GUI) so the clock can chime, add this file to start up, and set the correct path, so it can keep running infinitely whenever you boot your PC anytime.
+3. The "Main.pyw" file reads the text files as saved from the other py file (GUI) so the clock can chime, add this file to Startup, and set the correct path, so it can keep running infinitely whenever you boot your PC anytime.
 
 ## License
 
