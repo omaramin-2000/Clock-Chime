@@ -7,6 +7,8 @@
 - Can be set to ring every 15, 30, or 60 minutes.
 - Also chimes can be set at specific hours
 
+❮"img src=C:/Users/omara/Desktop/Programming/Clock Chime/Window.jpeg">
+
 ## Requirements
 
  1. Python3 or above
@@ -16,7 +18,7 @@
 
 ## Instructions
 
-1. The program contains 2 py files that work together, along with the data text files.
+1. The program contains py files that connect to each other so they can work together, along with the data text files.
 
 2. The "Clock Chime.pyw" file includes the Tkinter window, which's used to set the program so it saves to the data text files.
 
