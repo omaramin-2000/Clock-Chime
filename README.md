@@ -7,8 +7,6 @@
 - Can be set to ring every 15, 30, or 60 minutes.
 - Also chimes can be set at specific hours
 
-❮"img src=C:/Users/omara/Desktop/Programming/Clock Chime/Window.jpeg">
-
 ## Requirements
 
  1. Python3 or above
