@@ -5,7 +5,7 @@
 - This program is a chiming clock replicating the exact Big Ben chimes.
 - Works with GUI (Tkinter) window.
 - Can be set to ring every 15, 30, or 60 minutes.
-- Also chimes can be set at specific hours
+- Also chimes can be set at specific hours.
 
 ## Requirements
 
