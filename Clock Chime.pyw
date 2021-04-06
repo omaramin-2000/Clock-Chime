@@ -46,21 +46,21 @@ def switch():
         on_button.config(image = off) 
         is_on = False
         N = '0'
-        f = open('global.txt', 'w')
+        f = open('data/global.txt', 'w')
         f.writelines(N)
         f.close()
     else: 
         on_button.config(image = on) 
         is_on = True
         N = '1'
-        f = open('global.txt', 'w')
+        f = open('data/global.txt', 'w')
         f.writelines(N)
         f.close()
 
 # Defining the selected button so it writes the button value number in the text file
 def sel():    
     selection = str(i.get())
-    f = open('minutes to chime.txt', 'w')
+    f = open('data/minutes to chime.txt', 'w')
     f.writelines(selection)
     f.close()
 
@@ -92,12 +92,12 @@ R60.pack(pady = 5, side = 'top', anchor = 'center')
 # Propmts you to set the chiming hours
 
 def start():
-    f = open('a.txt', 'w')
+    f = open('data/a.txt', 'w')
     f.writelines(a.get())
     f.close()
 
 def end():
-    c = open('b.txt', 'w')
+    c = open('data/b.txt', 'w')
     c.writelines(b.get())
     c.close()
 
