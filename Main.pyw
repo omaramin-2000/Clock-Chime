@@ -6,20 +6,20 @@ from playsound import playsound
 # Looping the program
 while True:
     # Reads the number of minutes to chime that's written in the text file, by the other (GUI) program
-    f = open('minutes to chime.txt', 'r')
+    f = open('data/minutes to chime.txt', 'r')
     x = int(f.read())
 
     # Reads the text file that's responsible for the Chimes track that's determined by the other (GUI) program
     # Either if it's on or off
-    g = open('global.txt', 'r')
+    g = open('data/global.txt', 'r')
     t = int(g.read())
 
     # Reads the starting hour chime from the text file that's determined by the (GUI) program
-    s = open('a.txt', 'r')
+    s = open('data/a.txt', 'r')
     a = int(s.read())
 
     # Reads the ending hour chime from the text file that's determined by the (GUI) program
-    e = open('b.txt', 'r')
+    e = open('data/b.txt', 'r')
     b = int(e.read())
 
     # Only chimes if the track is on
