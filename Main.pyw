@@ -45,15 +45,15 @@ while True:
             # ends before the minute of 0, 15, 30, 45 passes
             if 0 <= Sec <5:
                 if Min == 0:
-                    playsound('Hour Chime.mp3')
+                    playsound('sounds/Hour Chime.mp3')
                     for y in range (Hr):
-                        playsound('Hour Strike.mp3')
+                        playsound('sounds/Hour Strike.mp3')
                 if x == 15 and Min == 15:
-                    playsound("Quarter Hour Chime.mp3")
+                    playsound('sounds/Quarter Hour Chime.mp3')
                 if x in [15, 30] and Min == 30:
-                    playsound('Half Hour Chime.mp3')
+                    playsound('sounds/Half Hour Chime.mp3')
                 if x == 15 and Min == 45:
-                    playsound('3 Quarter Hour Chime.mp3')
+                    playsound('sounds/3 Quarter Hour Chime.mp3')
 
     # Runs the loop once a second only to save CPU and battery
     time.sleep(1)
