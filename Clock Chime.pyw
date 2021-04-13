@@ -35,7 +35,7 @@ switchlabel.pack(pady = 3)
 
 # Keeps track of the button state on/off 
 #global is_on 
-g = open('global.txt', 'r')
+g = open('data/global.txt', 'r')
 t = int(g.read())
 
 if int(t) == 1: is_on = True
@@ -50,29 +50,29 @@ def switch():
         on_button.config(image = off) 
         is_on = False
         N = '0'
-        f = open('global.txt', 'w')
+        f = open('data/global.txt', 'w')
         f.writelines(N)
         f.close()
     else: 
         on_button.config(image = on) 
         is_on = True
         N = '1'
-        f = open('global.txt', 'w')
+        f = open('data/global.txt', 'w')
         f.writelines(N)
         f.close()
 
 # Defining the selected button so it writes the button value number in the text file
 def sel():    
     selection = str(i.get())
-    f = open('minutes to chime.txt', 'w')
+    f = open('data/minutes to chime.txt', 'w')
     f.writelines(selection)
     f.close()
 
 i = IntVar()
 
 # Defining The Images 
-on = PhotoImage(file = "On.png") 
-off = PhotoImage(file = "Off.png") 
+on = PhotoImage(file = "images/On.png") 
+off = PhotoImage(file = "images/Off.png") 
 
 if int(t) == 1: n = on
 else: n = off
@@ -102,11 +102,11 @@ R60.pack(pady = 5, side = 'top', anchor = 'center')
 # Propmts you to set the chiming hours
 
 def save():
-    f = open('a.txt', 'w')
+    f = open('data/a.txt', 'w')
     f.writelines(a.get())
     f.close()
 
-    c = open('b.txt', 'w')
+    c = open('data/b.txt', 'w')
     c.writelines(b.get())
     c.close()
 
@@ -116,7 +116,7 @@ combolabel.pack(pady= 30)
 labelA = Label(window, text= 'from')
 labelA.pack(pady= 3)
 
-s = open('a.txt', 'r')
+s = open('data/a.txt', 'r')
 w = int(s.read())
 
 # Adding the (start) combobox with the hours list to prompt you for selecting the hour to start chimes
@@ -128,7 +128,7 @@ a.pack(pady = 10, side = 'top', anchor = 'center')
 labelB = Label(window, text= 'to')
 labelB.pack(pady= 3)
 
-e = open('b.txt', 'r')
+e = open('data/b.txt', 'r')
 y = int(e.read())
 
 # Adding the (end) combobox with the hours list to prompt you for selecting the hour to end chimes
