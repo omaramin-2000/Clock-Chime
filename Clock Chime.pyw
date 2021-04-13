@@ -86,7 +86,7 @@ on_button.pack(pady = 15)
 radiolabel = Label(window, text ='Minutes to chime:', foreground ='grey')
 radiolabel.pack(pady = 10)
 
-c = open('minutes to chime.txt', 'r')
+c = open('data/minutes to chime.txt', 'r')
 m = int(c.read()) 
 
 R15 = Radiobutton(window, text="Every 15 minutes", value=15, variable=i, command=sel)
