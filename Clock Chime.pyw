@@ -35,7 +35,11 @@ switchlabel.pack(pady = 3)
 
 # Keeps track of the button state on/off 
 #global is_on 
-is_on = True
+g = open('global.txt', 'r')
+t = int(g.read())
+
+if int(t) == 1: is_on = True
+else: is_on = False
 
 # Defining the switch function 
 def switch(): 
@@ -46,32 +50,35 @@ def switch():
         on_button.config(image = off) 
         is_on = False
         N = '0'
-        f = open('data/global.txt', 'w')
+        f = open('global.txt', 'w')
         f.writelines(N)
         f.close()
     else: 
         on_button.config(image = on) 
         is_on = True
         N = '1'
-        f = open('data/global.txt', 'w')
+        f = open('global.txt', 'w')
         f.writelines(N)
         f.close()
 
 # Defining the selected button so it writes the button value number in the text file
 def sel():    
     selection = str(i.get())
-    f = open('data/minutes to chime.txt', 'w')
+    f = open('minutes to chime.txt', 'w')
     f.writelines(selection)
     f.close()
 
 i = IntVar()
 
 # Defining The Images 
-on = PhotoImage(file = "images/On.png") 
-off = PhotoImage(file = "images/Off.png") 
+on = PhotoImage(file = "On.png") 
+off = PhotoImage(file = "Off.png") 
+
+if int(t) == 1: n = on
+else: n = off
 
 # Creating The switch Button 
-on_button = Button(window, image = on, command = switch)
+on_button = Button(window, image = n, command = switch)
 on_button.pack(pady = 15) 
 
 
@@ -79,10 +86,13 @@ on_button.pack(pady = 15)
 radiolabel = Label(window, text ='Minutes to chime:', foreground ='grey')
 radiolabel.pack(pady = 10)
 
+c = open('minutes to chime.txt', 'r')
+m = int(c.read()) 
+
 R15 = Radiobutton(window, text="Every 15 minutes", value=15, variable=i, command=sel)
 R30 = Radiobutton(window, text="Every 30 minutes", value=30, variable=i, command=sel)
 R60 = Radiobutton(window, text="Every 60 minutes", value=60, variable=i, command=sel)
-i.set(15)
+i.set(m)
 
 R15.pack(pady = 5, side = 'top', anchor = 'center')
 R30.pack(pady = 5, side = 'top', anchor = 'center')
@@ -91,13 +101,12 @@ R60.pack(pady = 5, side = 'top', anchor = 'center')
 
 # Propmts you to set the chiming hours
 
-def start():
-    f = open('data/a.txt', 'w')
+def save():
+    f = open('a.txt', 'w')
     f.writelines(a.get())
     f.close()
 
-def end():
-    c = open('data/b.txt', 'w')
+    c = open('b.txt', 'w')
     c.writelines(b.get())
     c.close()
 
@@ -107,26 +116,29 @@ combolabel.pack(pady= 30)
 labelA = Label(window, text= 'from')
 labelA.pack(pady= 3)
 
+s = open('a.txt', 'r')
+w = int(s.read())
+
 # Adding the (start) combobox with the hours list to prompt you for selecting the hour to start chimes
 a = Combobox(window)
 a['values']= (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23)
-a.current(0)
+a.current(w)
 a.pack(pady = 10, side = 'top', anchor = 'center')
-
-x = Button(window, text = 'Set start', command = start)
-x.pack(pady = 3, anchor = 'center')
 
 labelB = Label(window, text= 'to')
 labelB.pack(pady= 3)
 
+e = open('b.txt', 'r')
+y = int(e.read())
+
 # Adding the (end) combobox with the hours list to prompt you for selecting the hour to end chimes
 b = Combobox(window)
 b['values']= (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24)
-b.current(24)
+b.current(y)
 b.pack(pady = 10, side = 'top', anchor = 'center')
 
-y = Button(window, text = 'Set end', command = end)
-y.pack(pady = 3, anchor = 'center')
+x = Button(window, text = 'Save', command = save)
+x.pack(pady = 10, anchor = 'center')
     
 # Executing the tkinter 
 window.mainloop()
