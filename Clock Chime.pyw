@@ -49,16 +49,14 @@ def switch():
     if is_on: 
         on_button.config(image = off) 
         is_on = False
-        N = '0'
         f = open('data/global.txt', 'w')
-        f.writelines(N)
+        f.writelines('0')
         f.close()
     else: 
         on_button.config(image = on) 
         is_on = True
-        N = '1'
         f = open('data/global.txt', 'w')
-        f.writelines(N)
+        f.writelines('1')
         f.close()
 
 # Defining the selected button so it writes the button value number in the text file
