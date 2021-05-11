@@ -11,8 +11,8 @@
 
  1. Python3 or above
  2. Pip package
- 3. Playsound package: Can be installed in cmd command "pip install playsound" in windows, or Linux; terminal: "pip3 install playsound"
- 4. Tkinter package: "pip install tk"
+ 3. Playsound package: Can be installed in cmd command ``` pip install playsound ``` in windows, or Linux; terminal: ``` pip3 install playsound ```
+ 4. Tkinter package: ``` pip install tk ```
 
 ## Instructions
 
