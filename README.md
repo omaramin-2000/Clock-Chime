@@ -1,6 +1,6 @@
 # Clock Chime By Omar Amin
 
-<img src="Window.jpg" alt="Trulli" width="150" height="300">
+<img src="Window.jpg" width="150" height="300">
 
 ## Description
 
