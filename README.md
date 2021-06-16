@@ -1,5 +1,5 @@
 # Clock Chime By Omar Amin
-
+<img src="Window.jpg" alt="Trulli" width="150" height="300">
 ## Description
 
 - This program is a chiming clock replicating the exact Big Ben chimes.
