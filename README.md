@@ -1,6 +1,6 @@
 # Clock Chime By Omar Amin
 
-<img src="Window.jpg" width="150" height="300">
+![Window](https://user-images.githubusercontent.com/65174210/122294009-e5a56d80-cef7-11eb-8931-d9a8e484f572.jpeg)
 
 ## Description
 
