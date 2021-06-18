@@ -18,11 +18,11 @@
 
 ## Instructions
 
-1. The program contains py files that connect to each other so they can work together, along with the text files in the "data" folder.
+1. The program contains "py" files that connect to each other so they can work together, along with the text files in the "data" folder.
 
 2. The "Clock Chime.pyw" file includes the Tkinter window, which's used to set the program so it saves to the data text files.
 
-3. The "Main.pyw" file reads the text files as saved from the other py file (GUI) so the clock can chime, add this file to Startup, and set the correct path, so it can keep running infinitely whenever you boot your PC anytime.
+3. The "Main.pyw" file reads the text files as saved from the other "py" file (GUI) so the clock can chime, add this file to Startup, and set the correct path, so it can keep running infinitely whenever you boot your PC anytime.
 
 ## License
 
