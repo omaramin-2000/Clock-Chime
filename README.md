@@ -1,14 +1,14 @@
 # Clock Chime By Omar Amin
 
 ![Window](https://user-images.githubusercontent.com/65174210/122294009-e5a56d80-cef7-11eb-8931-d9a8e484f572.jpeg)
-
+###Download for Windows: https://download-clock-chime.objectives.repl.co/
 ## Description
 
 - This program is a chiming clock replicating the exact Big Ben chimes.
 - Works with GUI (Tkinter) window.
 - Can be set to ring every 15, 30, or 60 minutes.
 - Also chimes can be set at specific hours.
-###Download for Windows: https://download-clock-chime.objectives.repl.co/
+
 ## Requirements
 
  1. Python3 or above
