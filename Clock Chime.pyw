@@ -68,14 +68,14 @@ def sel():
 
 i = IntVar()
 
-# Defining The Images 
+# Defining the images 
 on = PhotoImage(file = "images/On.png") 
 off = PhotoImage(file = "images/Off.png") 
 
 if int(t) == 1: n = on
 else: n = off
 
-# Creating The switch Button 
+# Creating the switch button 
 on_button = Button(window, image = n, command = switch)
 on_button.pack(pady = 15) 
 
