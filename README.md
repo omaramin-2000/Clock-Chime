@@ -1,6 +1,8 @@
 # Clock Chime By Omar Amin
 
-![Window](https://user-images.githubusercontent.com/65174210/130119833-be4aa502-6797-4af4-bfcd-977de9a9b1d2.jpeg)
+![Window](https://user-images.githubusercontent.com/65174210/122294009-e5a56d80-cef7-11eb-8931-d9a8e484f572.jpeg)
+
+- Download for Windows: <https://download-clock-chime.objectives.repl.co/>
 
 ## Description
 
@@ -15,8 +17,6 @@
  2. Pip package
  3. Playsound package: Can be installed using cmd: ``` pip install playsound ``` in windows, and in Linux using terminal: ``` pip3 install playsound ```
  4. Tkinter package: ``` pip install tk ```
-
-    - You can install the requirements from the text file by using the command: ``` pip install -r requirements.txt ```
 
 ## Instructions
 
