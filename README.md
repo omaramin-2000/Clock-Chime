@@ -2,7 +2,7 @@
 
 ![Window](https://user-images.githubusercontent.com/65174210/130119833-be4aa502-6797-4af4-bfcd-977de9a9b1d2.jpeg)
 
-- Download for Windows: <https://download-clock-chime.objectives.repl.co/>
+- Download for Windows: <https://download-clock-chime.objectives.repl.co/Clock%20Chime.msi>
 
 ## Description
 
